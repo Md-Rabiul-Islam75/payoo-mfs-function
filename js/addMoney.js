@@ -25,6 +25,11 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
 
        // wrong way to verify. do not try it at your serious website
       if(pinNumber === 1234){
+           const balance = getTextFieldValueById('account-balance');
+
+           const newBalance = balance + addMoney;
+         
+           document.getElementById('account-balance').innerText = newBalance;
 
       }
       else{
